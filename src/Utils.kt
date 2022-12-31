@@ -2,10 +2,12 @@ import java.io.File
 import java.math.BigInteger
 import java.security.MessageDigest
 
+const val alphabet: String = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
 /**
  * Reads lines from the given input txt file.
  */
-fun readInput(name: String) = File("src", "$name.txt")
+fun readInput(name: String) = File("inputs", "$name.txt")
     .readLines()
 
 /**
